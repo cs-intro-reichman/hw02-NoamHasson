@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.random.RandomGenerator;
 /**
  *  Computes some statistics about families in which the parents decide 
  *  to have children until they have at least one child of each gender.
@@ -10,10 +11,9 @@ import java.util.Random;
 public class OneOfEachStats {
 	public static void main (String[] args) {
 		// Gets the two command-line arguments
-		int T = Integer.parseInt(args[0]);
+		int T = Integer.parseInt(args[0]); 
 		int seed = Integer.parseInt(args[1]);
-		// Initailizes a random numbers generator with the given seed value
-        Random generator = new Random(seed); 
+		Random generator = new Random(seed);
 		int p = 0;
 		int f = 0;
 		int count = 0;
@@ -24,7 +24,7 @@ public class OneOfEachStats {
 		int foursM = 0;
 		int comNum;
 		boolean term = true;
-
+	
 		for (int i=0;i<T;i++) {
 
 			p = 0;
@@ -55,7 +55,7 @@ public class OneOfEachStats {
 					foursM++;
 				}
        }		
-	   		avr = sum/T; 
+	   		avr = (double) sum/T; 
 	   			if ( twos>threes&&twos>foursM ) {
 					comNum=2;
 				} else if ( threes>twos&&threes>foursM ) {

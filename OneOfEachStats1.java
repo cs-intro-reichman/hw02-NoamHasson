@@ -7,12 +7,12 @@
 public class OneOfEachStats1 {
 	public static void main (String[] args) {
 		
-		int T = Integer.parseInt(args[0]); 
+		int T = 7;//Integer.parseInt(args[0]); 
 		int p = 0;
 		int f = 0;
 		int count = 0;
 		int sum = 0;
-		int avr;
+		double avr;
 		int twos = 0;
 		int threes = 0;
 		int foursM = 0;
@@ -49,7 +49,7 @@ public class OneOfEachStats1 {
 					foursM++;
 				}
        }		
-	   		avr = sum/T; 
+	   		avr = (double) sum/T; 
 	   			if ( twos>threes&&twos>foursM ) {
 					comNum=2;
 				} else if ( threes>twos&&threes>foursM ) {
