@@ -67,7 +67,7 @@ public class OneOfEachStats {
 	   		System.out.println("Number of families with 2 children: " + twos);
 			System.out.println("Number of families with 3 children: " + threes);
 			System.out.println("Number of families with 4 or more children: " + foursM);			
-			System.out.println("The most common number of children is " +comNum );
+			System.out.println("The most common number of children is " +comNum + "." );
 		 
 		
 		//// In the previous version of this program, you used a statement like:
