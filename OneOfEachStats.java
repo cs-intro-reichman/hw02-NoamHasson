@@ -18,7 +18,7 @@ public class OneOfEachStats {
 		int f = 0;
 		int count = 0;
 		int sum = 0;
-		int avr;
+		double avr;
 		int twos = 0;
 		int threes = 0;
 		int foursM = 0;
