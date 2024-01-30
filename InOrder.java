@@ -4,6 +4,17 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
-	}
-}
+	
+		int x = 0;
+		int lim;
+		do {
+			lim = x;
+			x = (int)((Math.random()) * 10); 
+			if (x>=lim){
+			System.out.println(x);
+			}
+		} while (x>=lim); 
+
+		 }
+
+   }
